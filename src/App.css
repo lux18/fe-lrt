@@ -1,0 +1,314 @@
+.imgLogo {
+  width: 80px;
+}
+
+.navbar {
+  position: fixed !important;
+  z-index: 100;
+  width: 100%;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.sidebarNav {
+  position: fixed;
+  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-toggler {
+  padding: 0.2rem 0.4rem !important;
+  font-size: 1.2rem !important;
+}
+
+.navbar-toggler-icon {
+  width: 1.2rem !important;
+  height: 1.2rem !important;
+}
+
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: none;
+  box-shadow: 0 0 0 1px !important;
+}
+
+/* Custom sidebar style */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  background-color: #f8f9fa;
+  padding-top: 20px;
+}
+
+/* Main content area */
+.main-content {
+  margin-left: 250px;
+  padding: 20px;
+}
+
+.nav-item a {
+  color: black;
+  font-weight: 500;
+  opacity: 70%;
+}
+
+.nav-item a:hover {
+  color: black;
+  font-weight: 500;
+  opacity: 100%;
+}
+
+.nav-item a:focus {
+  color: black;
+  font-weight: 500;
+  opacity: 100%;
+}
+
+.text-icon {
+  font-size: 8px;
+}
+.contentAdmin {
+  position: relative;
+  height: 100%;
+  margin-left: 17%;
+  overflow: hidden;
+}
+
+.titleDaftarLaporan {
+  font-size: 30px;
+}
+
+.textDaftarLaporan {
+  font-size: 14px;
+  opacity: 60%;
+  margin-left: 2px;
+}
+
+table {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 5px;
+}
+
+td {
+  padding: 10px 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+  font-size: 14px;
+}
+
+th {
+  padding: 10px 20px;
+  background-color: #00000009;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.titleDashboard {
+  font-size: 20px;
+  color: rgb(30, 118, 194);
+}
+
+.titleDashboard1 {
+  font-size: 16px;
+  color: rgb(30, 118, 194);
+}
+
+@media screen and (max-width: 1200px) {
+  .contentAdmin {
+    margin-left: 25%;
+  }
+  .titleDaftarLaporan {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .contentAdmin {
+    margin-left: 60px;
+  }
+  .titleDaftarLaporan {
+    font-size: 20px;
+  }
+  .titleDashboard {
+    font-size: 16px;
+  }
+  td {
+    font-size: 12px;
+  }
+  .textDaftarLaporan {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 575px) {
+  .text-icon {
+    display: none;
+  }
+}
+
+.tableLrt {
+  min-width: 900px;
+}
+
+.tableLrtOuter {
+  position: relative;
+  overflow-x: scroll;
+}
+
+/* Gaya untuk track (background scrollbar) */
+::-webkit-scrollbar {
+  width: 12px; /* Lebar scrollbar */
+  height: 12px; /* Untuk scrollbar horizontal */
+}
+
+/* Gaya untuk track (background) scrollbar */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Warna latar belakang track */
+  border-radius: 10px;
+}
+
+/* Gaya untuk thumb (pegangan scrollbar) */
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* Warna pegangan */
+  border-radius: 10px;
+  border: 3px solid #f1f1f1; /* Border untuk thumb */
+}
+
+/* Gaya untuk thumb ketika di-hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Warna pegangan saat di-hover */
+  cursor: pointer;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.tableIcon {
+  height: 24px;
+}
+
+.navbar-brand {
+  color: rgb(48, 128, 193) !important;
+  font-weight: 600;
+}
+.dropdown-btn {
+  padding: 5px 10px;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 10px;
+  cursor: pointer;
+  text-align: start;
+}
+
+.dropdown-btn:focus {
+  box-shadow: 0 0 0 0.25rem #007bff3d;
+  border: 1px solid #007bff93;
+  outline: none;
+}
+
+.dropdown-content {
+  cursor: pointer;
+  max-height: 200px;
+  overflow-y: scroll;
+  margin-bottom: 5px;
+  padding: 0px 10px 10px 10px;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 14px;
+}
+
+.labelInputBuatLaporan {
+  opacity: 70%;
+}
+
+.invalid-feedback {
+  font-size: 0.875rem;
+  color: red;
+}
+
+select.is-invalid {
+  border-color: red;
+  background-position: right 1rem center;
+  background-repeat: no-repeat;
+  background-position: right calc(0.375em + 0.1875rem) center !important;
+}
+
+.imgLaporan {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.cardDashboard {
+  background-color: rgb(234, 240, 246);
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cardDashboard2 {
+  background-color: rgb(93, 150, 206);
+  padding: 10px 20px;
+  border-radius: 10px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cardDashboard p {
+  margin: 0;
+}
+
+.apexcharts-grid {
+  transform: translateX(-20px) !important;
+}
+
+.apexcharts-grid-borders {
+  transform: translateX(-20px) !important;
+}
+
+.apexcharts-series {
+  transform: translateX(-20px) !important;
+}
+
+.apexcharts-datalabels {
+  transform: translateX(-15px) !important;
+}
+
+.tooltip-custom {
+  padding: 5px 10px;
+  background-color: #2871b0;
+  font-weight: 600;
+}
+
+.graphic {
+  background-color: rgb(234, 240, 246);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.apexcharts-toolbar {
+  display: none !important;
+}
+
+.cardDashboard3 {
+  background-color: #2870b032;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.textCardDashboard3 {
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 70%;
+}
+
+.textCardDashboard3Body {
+  font-size: 24px;
+  font-weight: 600;
+}
