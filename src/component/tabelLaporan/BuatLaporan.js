@@ -38,9 +38,6 @@ const BuatLaporan = ({ show, handleClose, success }) => {
   };
 
   const handleSubmit = async () => {
-    toast("Laporan diproses.");
-    handleClose();
-
     if (validateForm()) {
       const formDataToSend = new FormData();
 
@@ -56,6 +53,9 @@ const BuatLaporan = ({ show, handleClose, success }) => {
       formDataToSend.append("status", "Pending");
       formDataToSend.append("createdAt", new Date().toISOString());
       formDataToSend.append("updatedAt", new Date().toISOString());
+
+      toast("Laporan diproses.");
+      handleClose();
 
       if (formData.file) {
         formDataToSend.append("buktiPenyaluran", formData.file);

@@ -66,9 +66,6 @@ const UpdateLaporan = ({ show, handleClose, success, id }) => {
   };
 
   const handleSubmit = async () => {
-    toast("Laporan diproses.");
-    handleClose();
-
     if (validateForm()) {
       const formDataToSend = {
         namaProgram: formData.selectedOption,
@@ -79,6 +76,9 @@ const UpdateLaporan = ({ show, handleClose, success, id }) => {
         status: reportData.status || "Pending",
         updatedAt: new Date().toISOString(),
       };
+
+      toast("Laporan diproses.");
+      handleClose();
 
       try {
         const response = await axios.put(
